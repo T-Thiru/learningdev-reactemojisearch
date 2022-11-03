@@ -21,14 +21,11 @@ header {
 }
 .search {
   height: 200px;
-  font-size: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-
-.liste {
-  margin: 10px 0;
-  border: 1px solid gray;
+.search p {
+  font-size: 40px;
 }

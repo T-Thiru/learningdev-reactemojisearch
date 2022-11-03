@@ -1,18 +1,17 @@
 import React from "react";
 import ListGroup from "react-bootstrap/ListGroup";
 
-const Line = (props) => {
+const Line = ({ emoji, value, setValue, result, setResult }) => {
   return (
     <div className="wrapper">
       <ListGroup>
-        {props.emoji.map((e, key) => {
+        {result.map((e, key) => {
           return (
             <ListGroup.Item key={key}>
               {e.title} {e.symbol}
             </ListGroup.Item>
           );
         })}
-        ;
       </ListGroup>
     </div>
   );
