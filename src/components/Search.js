@@ -15,10 +15,15 @@ const Search = ({ emoji, value, setValue, result, setResult }) => {
     }
   };
 
+  let random1 = Math.floor(Math.random() * 1800);
+  let random2 = Math.floor(Math.random() * 1800);
+
   return (
     <div className="search">
       <div>
-        <p>Emoji Search</p>
+        <p>
+          {emoji[random1].symbol} Emoji Search {emoji[random2].symbol}
+        </p>
       </div>
       <div>
         <Form>

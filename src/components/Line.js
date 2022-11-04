@@ -7,9 +7,11 @@ const Line = ({ emoji, value, setValue, result, setResult }) => {
       <ListGroup>
         {result.map((e, key) => {
           return (
-            <ListGroup.Item key={key}>
-              {e.title} {e.symbol}
-            </ListGroup.Item>
+            <div className="liste" key={key}>
+              <ListGroup.Item key={key}>
+                {e.title} {e.symbol}
+              </ListGroup.Item>
+            </div>
           );
         })}
       </ListGroup>

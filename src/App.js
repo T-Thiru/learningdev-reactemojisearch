@@ -7,6 +7,7 @@ import { useState } from "react";
 function App() {
   const [value, setValue] = useState("");
   const [result, setResult] = useState(emoji);
+
   return (
     <>
       <header>

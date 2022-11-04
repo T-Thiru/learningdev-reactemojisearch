@@ -29,3 +29,8 @@ header {
 .search p {
   font-size: 40px;
 }
+
+.liste:hover {
+  scale: 1.2;
+  z-index: 5;
+}
