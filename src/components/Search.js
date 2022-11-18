@@ -7,7 +7,7 @@ const Search = ({ emoji, value, setValue, result, setResult }) => {
 
     if (value !== "") {
       const results = emoji.filter((emo) => {
-        return emo.keywords.toLowerCase().includes(value.toLowerCase());
+        return emo.keywords.toLowerCase().startsWith(value.toLowerCase());
       });
       setResult(results);
     } else {
